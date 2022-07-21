@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Indian National Cricket Team</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Schedule</a>
+            <a href="#">Results</a>
+            <a href="#">News</a>
+            <a href="#">Videos</a>
+            <a href="#">Photos</a>
+        </div>
+        <hr>
+        <div>
+            <div id="left-side">
+                <h1>Top Stories</h1>
+            </div>
+            <div id="left-side">
+                <h1>Latest Vidos</h1>
+            </div>
+            <div id="left-side">
+                <h1>Latest Photos</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let arr=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239554/cms-img.jpg",
+            txtl:"Jadeja doubtful for West Indies ODIs, Rahul for T20Is",
+            link:"https://www.cricbuzz.com/cricket-news/123169/jadeja-doubtful-for-west-indies-odis-rahul-for-t20is",
+            txt:"While Jadeja has a knee niggle, Rahul has tested COVID-positive",
+            txtd:"Jul 21 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239548/cms-img.jpg",
+            txtl:"Beleaguered West Indies have their task cut out against under-powered India",
+            link:"https://www.cricbuzz.com/cricket-news/123164/beleaguered-west-indies-have-their-task-cut-out-against-under-powered-india",
+            txt:"India approach the ODI series with an eye on giving more chances to their fringe players ahead of next year's home World Cup",
+            txtd:"Jul 21 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239484/cms-img.jpg",
+            txtl:"World Cup 2023: Tax levy of 21 per cent leaves Stakeholders in a fix",
+            link:"https://www.cricbuzz.com/cricket-news/123141/world-cup-2023-tax-levy-of-21-per-cent-leaves-stakeholders-in-a-fix",
+            txt:"The BCCI is trying to negotiate with the Government of India over the matter so that the income from the tournament, to be distributed among the members of the ICC, is not severely affected",
+            txtd:"Jul 19 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239462/cms-img.jpg",
+            txtl:"Domestic season high on July 21 Apex Council agenda",
+            link:"https://www.cricbuzz.com/cricket-news/123131/domestic-season-high-on-july-21-apex-council-agenda",
+            txt:"The 2021-22 Ranji Trophy season was completed successfully either side of IPL 2022",
+            txtd:"Jul 18 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239444/cms-img.jpg",
+            txtl:"Hardik pleased to 'fill the big shoes' of Bumrah",
+            link:"https://www.cricbuzz.com/cricket-news/123123/hardik-pleased-to-fill-the-big-shoes-of-bumrah",
+            txt:"With Bumrah not playing, Hardik had to step up with the ball and he showed his ability to adjust to different conditions with vital wickets",
+            txtd:"Jul 18 2022"
+        },
+    ];
+    let vis=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239544/cms-img.jpg",
+            txtl:"Dhawan to lead, Rohit rested: The buzz ahead of West Indies vs India",
+            link:"https://www.cricbuzz.com/cricket-videos/56779/dhawan-to-lead-rohit-rested-the-buzz-ahead-of-west-indies-vs-india",
+            txt:"Shikhar Dhawan will lead India in the absence of Rohit Sharma in the ODI leg against West Indies. What's the buzz ahead of the series? Tap to watch",
+            txtd:"Jul 21 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239501/cms-img.jpg",
+            txtl:"Chance to Shine in ODIs ft. Shubman Gill, Sanju Samson",
+            link:"https://www.cricbuzz.com/cricket-videos/56778/chance-to-shine-in-odis-ft-shubman-gill-sanju-samson",
+            txt:"With Rohit Sharma & Rishabh Pant rested from the ODIs, can the youngsters step up against West Indies? Tanay Tiwari lists out the Top 5 names who have a chance to shine",
+            txtd:"Jul 20 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239493/cms-img.jpg",
+            txtl:"The tale of Indian captains ft. Rohit Sharma, Hardik Pandya",
+            link:"https://www.cricbuzz.com/cricket-videos/56777/the-tale-of-indian-captains-ft-rohit-sharma-hardik-pandya",
+            txt:"Ever since Virat Kohli's last Test as captain in January, 5 different captains have led India. Tanay Tiwari takes you through their tenures",
+            txtd:"Jul 20 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239405/cms-img.jpg",
+            txtl:"England v India, 3rd ODI: Full Highlights",
+            link:"https://www.cricbuzz.com/cricket-videos/56766/england-v-india-3rd-odi-full-highlights",
+            txt:"From Hardik's all-round show to Rishabh Pant's magnificent knock. Watch all the highlights from the series decider here",
+            txtd:"Jul 18 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239433/cms-img.jpg",
+            txtl:"Pant's match-winning ton a template of how one should finish games: Zaheer Khan",
+            link:"https://www.cricbuzz.com/cricket-videos/56775/pants-match-winning-ton-a-template-of-how-one-should-finish-games-zaheer-khan",
+            txt:"Rishabh Pant & Hardik Pandya's 133-run stand helped India chase down 260 in style & clinch the 3rd ODI. Zaheer Khan & Joy Bhattacharjya hail the duo, on Cricbuzz Live",
+            txtd:"Jul 17 2022"
+        }
+    ];
+    let photo=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/300x170/i1/c239296/england-vs-india-3rd-odi.jpg",
+            lab:"England vs India, 3rd ODI",
+            dat:"Sun, Jul 17 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/300x170/i1/c239004/england-vs-india-2nd-odi-lor.jpg",
+            lab:"England vs India, 2nd ODI, Lord's",
+            dat:"Thu, Jul 14 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/300x170/i1/c238516/england-vs-india-1st-odi-the.jpg",
+            lab:"England vs India, 1st ODI, The Oval",
+            dat:"Tue, Jul 12 2022"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/300x170/i1/c238334/england-vs-india-3rd-t20i-no.jpg",
+            lab:"England vs India, 3rd T20I, Nottingham",
+            dat:"Sun, Jul 10 2022"
+        },
+    ];
+</script>
