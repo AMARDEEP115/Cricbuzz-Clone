@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Indain National Cricket Team</h1>
+        <div>
+            <a href="India_Home_Page.html">Home</a>
+            <a href="#">Schedule</a>
+            <a href="India_Results_Page.html">Results</a>
+            <a href="#">News</a>
+            <a href="#">Videos</a>
+            <a href="#">Photos</a>
+            <a href="#">Stats</a>
+            <a href="India_Players_Page.html">Players</a>
+        </div>
+        <div>
+            <div>
+                <h2>BATSMAN</h2>
+                <div id="bat"></div>
+                <h2>ALL ROUNDER</h2>
+                <div id="all"></div>
+                <h2>WICKET KEEPER</h2>
+                <div id="wic"></div>
+                <h2>BOWLER</h2>
+                <div id="ball"></div>
+            </div>
+            <div id="right-side">
+                <h3>LATEST NEWS</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let bat=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170661/virat-kohli.jpg",
+            name:"Virat Kohli",
+            link:"https://www.cricbuzz.com/profiles/1413/virat-kohli"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170658/rohit-sharma.jpg",
+            name:"Rohit Sharma",
+            link:"https://www.cricbuzz.com/profiles/576/rohit-sharma"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170660/shikhar-dhawan.jpg",
+            name:"Shikhar Dhawan",
+            link:"https://www.cricbuzz.com/profiles/1446/shikhar-dhawan"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171042/shubman-gill.jpg",
+            name:"Shubman Gill",
+            link:"https://www.cricbuzz.com/profiles/11808/shubman-gill"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171024/shreyas-iyer.jpg",
+            name:"Shreyas Iyer",
+            link:"https://www.cricbuzz.com/profiles/9428/shreyas-iyer"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171022/manish-pandey.jpg",
+            name:"Manish Pandey",
+            link:"https://www.cricbuzz.com/profiles/1836/manish-pandey"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171091/mayank-agarwal.jpg",
+            name:"Mayank Agarwal",
+            link:"https://www.cricbuzz.com/profiles/2195/mayank-agarwal"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171030/prithvi-shaw.jpg",
+            name:"Prithvi Shaw",
+            link:"https://www.cricbuzz.com/profiles/12094/prithvi-shaw"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153263/cheteshwar-pujara.jpg",
+            name:"Cheteshwar Pujara",
+            link:"https://www.cricbuzz.com/profiles/1448/cheteshwar-pujara"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171082/ajinkya-rahane.jpg",
+            name:"Ajinkya Rahane",
+            link:"https://www.cricbuzz.com/profiles/1447/ajinkya-rahane"
+        }
+    ];
+    bat.forEach(function (el,i){
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let a=document.createElement("a");
+        a.innerText=el.name;
+        a.setAttribute("href",el.link);
+        div.append(img,a);
+        document.querySelector("#bat").append(div);
+    });
+
+    let AllR=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170666/hardik-pandya.jpg",
+            name:"Hardik Pandya",
+            link:"https://www.cricbuzz.com/profiles/9647/hardik-pandya"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171080/hanuma-vihari.jpg",
+            name:"Hanuma Vihari",
+            link:"https://www.cricbuzz.com/profiles/8424/hanuma-vihari"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170670/ravindra-jadeja.jpg",
+            name:"Ravindra Jadeja",
+            link:"https://www.cricbuzz.com/profiles/587/ravindra-jadeja"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153372/ravichandran-ashwin.jpg",
+            name:"Ravichandran Ashwin",
+            link:"https://www.cricbuzz.com/profiles/1593/ravichandran-ashwin"
+        }
+    ];
+    AllR.forEach(function (el,i){
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let a=document.createElement("a");
+        a.innerText=el.name;
+        a.setAttribute("href",el.link);
+        div.append(img,a);
+        document.querySelector("#all").append(div);
+    });
+
+    let Wckkeep=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170673/kl-rahul.jpg",
+            name:"KL Rahul",
+            link:"https://www.cricbuzz.com/profiles/8733/kl-rahul"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226289/sanju-samson.jpg",
+            name:"Sanju Samson",
+            link:"https://www.cricbuzz.com/profiles/8271/sanju-samson"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171058/wriddhiman-saha.jpg",
+            name:"Wriddhiman Saha",
+            link:"https://www.cricbuzz.com/profiles/1465/wriddhiman-saha"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171010/rishabh-pant.jpg",
+            name:"Rishabh Pant",
+            link:"https://www.cricbuzz.com/profiles/10744/rishabh-pant"
+        }
+    ];
+    Wckkeep.forEach(function (el,i){
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let a=document.createElement("a");
+        a.innerText=el.name;
+        a.setAttribute("href",el.link);
+        div.append(img,a);
+        document.querySelector("#wic").append(div);
+    });
+
+    let bol=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170684/mohammed-shami.jpg",
+            name:"Mohammed Shami",
+            link:"https://www.cricbuzz.com/profiles/7909/mohammed-shami"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170685/jasprit-bumrah.jpg",
+            name:"Jasprit Bumrah",
+            link:"https://www.cricbuzz.com/profiles/9311/jasprit-bumrah"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170683/kuldeep-yadav.jpg",
+            name:"Kuldeep Yadav",
+            link:"https://www.cricbuzz.com/profiles/8292/kuldeep-yadav"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170690/yuzvendra-chahal.jpg",
+            name:"Yuzvendra Chahal",
+            link:"https://www.cricbuzz.com/profiles/7910/yuzvendra-chahal"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226400/navdeep-saini.jpg",
+            name:"Navdeep Saini",
+            link:"https://www.cricbuzz.com/profiles/9715/navdeep-saini"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226224/shardul-thakur.jpg",
+            name:"Shardul Thakur",
+            link:"https://www.cricbuzz.com/profiles/8683/shardul-thakur"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153874/umesh-yadav.jpg",
+            name:"Umesh Yadav",
+            link:"https://www.cricbuzz.com/profiles/1858/umesh-yadav"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171039/mohammed-siraj.jpg",
+            name:"Mohammed Siraj",
+            link:"https://www.cricbuzz.com/profiles/10808/mohammed-siraj"
+        }
+    ];
+    bol.forEach(function (el,i){
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let a=document.createElement("a");
+        a.innerText=el.name;
+        a.setAttribute("href",el.link);
+        div.append(img,a);
+        document.querySelector("#ball").append(div);
+    });
+
+    let brr=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239566/west-indies-suffered-a-3-0-def.jpg",
+            txt:"Haven't found the right template for ODIs yet: Pooran",
+            txtl:"https://www.cricbuzz.com/cricket-news/123176/havent-found-the-right-template-for-odis-yet-nicholas-pooran",
+            dat:"51m ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239565/byju-apparently-owes-over-inr.jpg",
+            txt:"BCCI having issues of different nature with main sponsors",
+            txtl:"https://www.cricbuzz.com/cricket-news/123175/bcci-having-issues-of-different-nature-with-main-sponsors",
+            dat:"1h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239564/dunkley-cracked-a-quick-fire-f.jpg",
+            txt:"Dunkley, Brunt star in England's comfortable win",
+            txtl:"https://www.cricbuzz.com/cricket-news/123174/sophia-dunkley-katherine-brunt-star-in-england-crickets-comfortable-win",
+            dat:"2h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239558/mcgrath-made-a-30-ball-fifty.jpg",
+            txt:"Lanning, McGrath and bowlers star in dominant Australia win",
+            txtl:"https://www.cricbuzz.com/cricket-news/123173/lanning-mcgrath-and-bowlers-star-in-dominant-australia-win",
+            dat:"9h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239559/worrall-file-pic-picked-up-a.jpg",
+            txt:"Worrall, Roach put Surrey in driver's seat",
+            txtl:"https://www.cricbuzz.com/cricket-news/123172/worrall-roach-put-surrey-in-drivers-seat",
+            dat:"9h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239555/shaheen-afridi-has-been-ruled.jpg",
+            txt:"Afridi ruled out of second Test with knee injury",
+            txtl:"https://www.cricbuzz.com/cricket-news/123171/afridi-ruled-out-of-second-test-with-knee-injury",
+            dat:"12h ago"
+        }
+    ];
+    brr.forEach(function (el,i){
+        let diva=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let divb=document.createElement("div");
+        let a=document.createElement("a");
+        a.innerText=el.txt;
+        a.setAttribute("href",el.txtl);
+        let p=document.createElement("p");
+        p.innerText=el.dat;
+        divb.append(a,p);
+        let hr=document.createElement("hr");
+        diva.append(img,divb);
+        document.querySelector("#right-side").append(diva,hr);
+    });
+    let btn=document.createElement("button");
+    btn.innerText="More News";
+    document.querySelector("#right-side").append(btn);
+</script>

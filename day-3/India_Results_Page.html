@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>India National Cricket Team</h1>
+        <div>
+            <a href="India_Home_Page.html">Home</a>
+            <a href="#">Schedule</a>
+            <a href="India_Results_Page.html">Results</a>
+            <a href="#">News</a>
+            <a href="#">Videos</a>
+            <a href="#">Photos</a>
+            <a href="#">Stats</a>
+            <a href="India_Players_Page.html">Players</a>
+        </div>
+        <div>
+            <div>
+                <h2>India Cricket Team Result</h2>
+                <div id="left-side">
+                    <div>Date</div>
+                    <div>Match Details</div>
+                </div>
+            </div>
+            <div id="right-side">
+                <h3>LATEST NEWS</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let arr=[
+        {
+            dat:"Jul 17, Sun",
+            vs:"England vs India, 3rd ODI",
+            went:"India tour of England, 2022",
+            place:"Emirates Old Trafford, Manchester",
+            res:"India won by 5 wkts",
+            link:"https://www.cricbuzz.com/live-cricket-scores/38321/eng-vs-ind-3rd-odi-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 14, Thu",
+            vs:"England vs India, 2nd ODI",
+            went:"India tour of England, 2022",
+            place:"Lord's, London",
+            res:"England won by 100 runs",
+            link:"https://www.cricbuzz.com/cricket-scores/38317/eng-vs-ind-2nd-odi-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 12, Tue",
+            vs:"England vs India, 1st ODI",
+            went:"India tour of England, 2022",
+            place:"Kennington Oval, London",
+            res:"India won by 10 wkts",
+            link:"https://www.cricbuzz.com/cricket-scores/38312/eng-vs-ind-1st-odi-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 10, Sun",
+            vs:"England vs India, 3rd T20I",
+            went:"India tour of England, 2022",
+            place:"Trent Bridge, Nottingham",
+            res:"England won by 17 runs",
+            link:"https://www.cricbuzz.com/cricket-scores/38311/eng-vs-ind-3rd-t20i-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 09, Sat",
+            vs:"India vs England, 2nd T20I",
+            went:"India tour of England, 2022",
+            place:"Edgbaston, Birmingham",
+            res:"India won by 49 runs",
+            link:"https://www.cricbuzz.com/cricket-scores/38306/ind-vs-eng-2nd-t20i-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 07, Thu",
+            vs:"India vs England, 1st T20I",
+            went:"India tour of England, 2022",
+            place:"The Rose Bowl, Southampton",
+            res:"India won by 50 runs",
+            link:"https://www.cricbuzz.com/cricket-scores/38301/ind-vs-eng-1st-t20i-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jul 01, Fri",
+            vs:"India vs England, 5th Test (Rescheduled match)",
+            went:"India tour of England, 2022",
+            place:"Edgbaston, Birmingham",
+            res:"England won by 7 wkts",
+            link:"https://www.cricbuzz.com/cricket-scores/41846/ind-vs-eng-5th-test-rescheduled-match-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jun 23, Thu",
+            vs:"India vs Leicestershire, 4-day Warm-up Match",
+            went:"India tour of England, 2022",
+            place:"Grace Road, Leicester",
+            res:"Match drawn",
+            link:"https://www.cricbuzz.com/cricket-scores/48016/ind-vs-leic-4-day-warm-up-match-india-tour-of-england-2022"
+        },
+        {
+            dat:"Jun 28, Tue",
+            vs:"India vs Ireland, 2nd T20I",
+            went:"India tour of Ireland, 2022",
+            place:"The Village, Dublin",
+            res:"India won by 4 runs",
+            link:"https://www.cricbuzz.com/cricket-scores/45731/ind-vs-ire-2nd-t20i-india-tour-of-ireland-2022"
+        },
+        {
+            dat:"Jun 26, Sun",
+            vs:"Ireland vs India, 1st T20I",
+            went:"India tour of Ireland, 2022",
+            place:"The Village, Dublin",
+            res:"India won by 7 wkts - Match reduced to 12 overs per side due to rain",
+            link:"https://www.cricbuzz.com/cricket-scores/45726/ire-vs-ind-1st-t20i-india-tour-of-ireland-2022"
+        }
+    ];
+    arr.forEach(function (el,i){
+        let diva=document.createElement("div");
+        let pa=document.createElement("p");
+        pa.innerText=el.dat;
+        diva.append(pa);
+        let divb=document.createElement("div");
+        let pb=document.createElement("p");
+        pb.innerText=el.vs;
+        let pc=document.createElement("p");
+        pc.innerText=el.went;
+        let pd=document.createElement("p");
+        pd.innerText=el.place;
+        let a=document.createElement("a");
+        a.innerText=el.res;
+        a.setAttribute("href",el.link);
+        divb.append(pb,pc,pd,a);
+        let hr=document.createElement("hr");
+        document.querySelector("#left-side").append(diva,divb,hr);
+    });
+
+    let brr=[
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239566/west-indies-suffered-a-3-0-def.jpg",
+            txt:"Haven't found the right template for ODIs yet: Pooran",
+            txtl:"https://www.cricbuzz.com/cricket-news/123176/havent-found-the-right-template-for-odis-yet-nicholas-pooran",
+            dat:"51m ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239565/byju-apparently-owes-over-inr.jpg",
+            txt:"BCCI having issues of different nature with main sponsors",
+            txtl:"https://www.cricbuzz.com/cricket-news/123175/bcci-having-issues-of-different-nature-with-main-sponsors",
+            dat:"1h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239564/dunkley-cracked-a-quick-fire-f.jpg",
+            txt:"Dunkley, Brunt star in England's comfortable win",
+            txtl:"https://www.cricbuzz.com/cricket-news/123174/sophia-dunkley-katherine-brunt-star-in-england-crickets-comfortable-win",
+            dat:"2h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239558/mcgrath-made-a-30-ball-fifty.jpg",
+            txt:"Lanning, McGrath and bowlers star in dominant Australia win",
+            txtl:"https://www.cricbuzz.com/cricket-news/123173/lanning-mcgrath-and-bowlers-star-in-dominant-australia-win",
+            dat:"9h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239559/worrall-file-pic-picked-up-a.jpg",
+            txt:"Worrall, Roach put Surrey in driver's seat",
+            txtl:"https://www.cricbuzz.com/cricket-news/123172/worrall-roach-put-surrey-in-drivers-seat",
+            dat:"9h ago"
+        },
+        {
+            img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c239555/shaheen-afridi-has-been-ruled.jpg",
+            txt:"Afridi ruled out of second Test with knee injury",
+            txtl:"https://www.cricbuzz.com/cricket-news/123171/afridi-ruled-out-of-second-test-with-knee-injury",
+            dat:"12h ago"
+        }
+    ];
+    brr.forEach(function (el,i){
+        let diva=document.createElement("div");
+        let img=document.createElement("img");
+        img.setAttribute("src",el.img);
+        let divb=document.createElement("div");
+        let a=document.createElement("a");
+        a.innerText=el.txt;
+        a.setAttribute("href",el.txtl);
+        let p=document.createElement("p");
+        p.innerText=el.dat;
+        divb.append(a,p);
+        let hr=document.createElement("hr");
+        diva.append(img,divb);
+        document.querySelector("#right-side").append(diva,hr);
+    });
+    let btn=document.createElement("button");
+    btn.innerText="More News";
+    document.querySelector("#right-side").append(btn);
+</script>
