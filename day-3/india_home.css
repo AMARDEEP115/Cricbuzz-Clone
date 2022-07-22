@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E6E3;
+}
+hr{
+    width: 100%;
+}
+body>div{
+    width: 70%;
+    margin: 0px;
+    margin: auto;
+}
+body>div>div:first-child{
+    margin-top: 0px;
+    padding-left: 15px;
+    background-color: white;
+    width: 99%;
+    padding-top: 10px;
+}
+body>div>div>h1+div>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+body>div>div>h1+div>a:first-child{
+    color: #009270;
+}
+body>div>div>h1+div{
+    padding-bottom: 10px;
+}
+#left-sideA>div>div{
+    display: flex;
+    gap: 20px;
+}
+#left-sideB>div>div{
+    display: flex;
+    gap: 20px;
+}
+#left-sideC>div{
+    display: grid;
+    grid-template-columns: repeat(2,315px);
+    grid-template-rows: repeat(2,255px);
+    gap: 15px;
+    padding-bottom: 20px;
+}
+#man{
+    display: flex;
+    justify-content: space-between;
+}
+#man>div:first-child{
+    width: 655px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+}
+#man>div:last-child{
+    width: 330px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#man a{
+    font-weight: bold;
+    font-size: 18px;
+}
+#man a:hover{
+    text-decoration: underline;
+}
+#man p{
+    color: grey;
+    font-size: 13px;
+}
+hr{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+img{
+    border-radius: 5px;
+    height: 135px;
+}
+#man hr{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#deatils>h3{
+    color: #009270;
+}
+#left-sideC>div>div{
+    background-color: #333333;
+    border-radius: 5px;
+}
+#left-sideC img{
+    width: 100%;
+    height: 155px;
+    border-radius: 5px;
+}
+#left-sideC>div>div>p{
+    color: white;
+}
+#left-sideA>div>div>div:last-child{
+    width: 350px;
+}
+button{
+    background-color: #009270;
+    border-color: #009270;
+    display: block;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+}
+button>a{
+    font-size: 15px;
+}

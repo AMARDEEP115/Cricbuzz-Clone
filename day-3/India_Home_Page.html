@@ -5,28 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="india_home.css">
 </head>
 <body>
-    <div>
-        <h1>Indian National Cricket Team</h1>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Schedule</a>
-            <a href="#">Results</a>
-            <a href="#">News</a>
-            <a href="#">Videos</a>
-            <a href="#">Photos</a>
+    <div id="main">
+        <div id="top">
+            <h1>Indian National Cricket Team</h1>
+            <div>
+                <a href="India_Home_Page.html">Home</a>
+                <a href="#">Schedule</a>
+                <a href="India_Results_Page.html">Results</a>
+                <a href="#">News</a>
+                <a href="#">Videos</a>
+                <a href="#">Photos</a>
+                <a href="#">Stats</a>
+                <a href="India_Players_Page.html">Players</a>
+            </div>
         </div>
         <hr>
-        <div>
-            <div id="left-side">
-                <h1>Top Stories</h1>
+        <div id="man">
+            <div>
+                <div id="left-sideA">
+                    <h1>Top Stories</h1>
+                    <div></div>
+                </div>
+                <div id="left-sideB">
+                    <h1>Latest Vidos</h1>
+                    <div></div>
+                </div>
+                <div id="left-sideC">
+                    <h1>Latest Photos</h1>
+                    <div></div>
+                </div>
             </div>
-            <div id="left-side">
-                <h1>Latest Vidos</h1>
-            </div>
-            <div id="left-side">
-                <h1>Latest Photos</h1>
+            <div id="deatils">
+                <h3>MATCHES</h3>
             </div>
         </div>
     </div>
@@ -71,6 +84,26 @@
             txtd:"Jul 18 2022"
         },
     ];
+    arr.forEach(function (el){
+        let div=document.createElement("div");
+        let diva=document.createElement("div");
+        let divb=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",el.img);
+        diva.append(image);
+        let atag=document.createElement("a");
+        atag.innerText=el.txtl;
+        atag.setAttribute("href",el.link);
+        let pa=document.createElement("p");
+        pa.innerText=el.txt;
+        let pb=document.createElement("p");
+        pb.innerText=el.txtd;
+        divb.append(atag,pa,pb);
+        div.append(diva,divb);
+        let hr=document.createElement("hr");
+        document.querySelector("#left-sideA>div").append(div,hr);
+    });
+
     let vis=[
         {
             img:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c239544/cms-img.jpg",
@@ -108,6 +141,26 @@
             txtd:"Jul 17 2022"
         }
     ];
+    vis.forEach(function (el){
+        let div=document.createElement("div");
+        let diva=document.createElement("div");
+        let divb=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",el.img);
+        diva.append(image);
+        let atag=document.createElement("a");
+        atag.innerText=el.txtl;
+        atag.setAttribute("href",el.link);
+        let pa=document.createElement("p");
+        pa.innerText=el.txt;
+        let pb=document.createElement("p");
+        pb.innerText=el.txtd;
+        divb.append(atag,pa,pb);
+        div.append(diva,divb);
+        let hr=document.createElement("hr");
+        document.querySelector("#left-sideB>div").append(div,hr);
+    });
+
     let photo=[
         {
             img:"https://www.cricbuzz.com/a/img/v1/300x170/i1/c239296/england-vs-india-3rd-odi.jpg",
@@ -130,4 +183,79 @@
             dat:"Sun, Jul 10 2022"
         },
     ];
+    photo.forEach(function (el){
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",el.img);
+        div.append(image);
+        let pa=document.createElement("p");
+        pa.innerText=el.lab;
+        pa.style.fontSize="16px";
+        pa.style.fontWeight="bold";
+        pa.style.color="#CCC";
+        let pb=document.createElement("p");
+        pb.innerText=el.dat;
+        pb.style.fontSize="14px";
+        pb.style.color="#CCC";
+        div.append(image,pa,pb);
+        document.querySelector("#left-sideC>div").append(div);
+    });
+
+    let details=[
+        {
+            ta:"1st ODI, Port of Spain, Trinidad",
+            tb:"WI",
+            tc:"IND",
+            td:"Fri, 22 Jul 13:30 GMT"
+        },
+        {
+            ta:"2nd ODI, Port of Spain, Trinidad",
+            tb:"WI",
+            tc:"IND",
+            td:"Sun, 24 Jul 13:30 GMT"
+        },
+        {ta:"3rd ODI, Port of Spain, Trinidad",
+            tb:"WI",
+            tc:"IND",
+            td:"Wed, 27 Jul 13:30 GMT"
+        },
+        {
+            ta:"1st T20I, Tarouba, Trinidad",
+            tb:"WI",
+            tc:"IND",
+            td:"Fri, 29 Jul 14:30 GMT"
+        },
+        {
+            ta:"2nd T20I, Basseterre, St Kitts",
+            tb:"WI",
+            tc:"IND",
+            td:"Mon, 01 Aug 14:30 GMT"
+        }
+    ];
+    details.forEach(function (el,i){
+        let pa=document.createElement("p");
+        pa.innerText=el.ta;
+        pa.style.fontSize="11px";
+        pa.style.color="black";
+        let pb=document.createElement("p");
+        pb.innerText=el.tb;
+        pb.style.color="black";
+        let pc=document.createElement("p");
+        pc.innerText=el.tc;
+        pc.style.color="black";
+        let pd=document.createElement("p");
+        pd.innerText=el.td;
+        pd.style.color="#a36501";
+        pd.style.fontWeight="500";
+        let line=document.createElement("hr");
+        document.querySelector("#deatils").append(pa,pb,pc,pd,line);
+    });
+    let btn=document.createElement("button");
+    let lk=document.createElement("a");
+    lk.setAttribute("href","https://www.cricbuzz.com/cricket-team/india/2/schedule");
+    lk.innerText="More Matches";
+    lk.style.color="white";
+    lk.style.textDecoration="none";
+    btn.append(lk);
+    document.querySelector("#deatils").append(btn);
 </script>
