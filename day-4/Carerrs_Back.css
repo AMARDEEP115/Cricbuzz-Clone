@@ -1,0 +1,121 @@
+body{
+    background-color: #E3E6E3;
+}
+body>div{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body>div>div{
+    display: flex;
+}
+h1 , p {
+    text-align: center;
+}
+#left{
+    padding: 20px;
+}
+#left p{
+    text-align: left;
+    line-height: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    padding-right: 250px;
+    margin-top: 50px;
+}
+form>input{
+    height: 30px;
+}
+form>input:nth-child(9){
+    height: 80px;
+}
+form>button{
+    width: 90px;
+}
+#robot{
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#robot>div:first-child{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 10px;
+}
+#robot>div:first-child>div{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+#robot>div:last-child{
+    margin-right: 10px;
+}
+#robot>div:last-child>img{
+    width: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+#robot>div:last-child>div>a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+#robot+button{
+    background-color: green;
+    color: white;
+    border-color: green;
+    height: 30px;
+}
+.bld{
+    font-weight: 600;
+}
+ul{
+    margin-top: 15px;
+}
+ul li{
+    font-size: 17px;
+    font-weight:100;
+    margin-left: 10px;
+    line-height: 22px;
+}
+body>div>h1+p{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+body>div{
+    padding-top: 7px;
+}
+#right{
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 1350px;
+}
+#right>h2{
+    font-size: 20px;
+}
+#right>div>h2{
+    font-size: 17px;
+}
+#right>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#right>div>div>a{
+    text-decoration: none;
+    color: blue;
+}
