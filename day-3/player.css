@@ -1,0 +1,145 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width: 69%;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+#main>h1+div{
+    display: flex;
+}
+#main>h1+div>a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+#main>h1+div>a:last-child{
+    color: teal;
+}
+hr+div{
+    display: flex;
+}
+#bat{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(5,150px);
+}
+#bat>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+#bat>div>img{
+    border-radius: 5px;
+}
+#bat>div>a{
+    text-decoration: none;
+    color: black;
+}
+#bat>div>a:hover{
+    text-decoration: underline;
+}
+#all{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,150px);
+}
+#all>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+#all>div>img{
+    border-radius: 5px;
+}
+#all>div>a{
+    text-decoration: none;
+    color: black;
+}
+#all>div>a:hover{
+    text-decoration: underline;
+}
+#wic{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,150px);
+}
+#wic>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+#wic>div>img{
+    border-radius: 5px;
+}
+#wic>div>a{
+    text-decoration: none;
+    color: black;
+}
+#wic>div>a:hover{
+    text-decoration: underline;
+}
+#ball{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(5,150px);
+}
+#ball>div{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+#ball>div>img{
+    border-radius: 5px;
+}
+#ball>div>a{
+    text-decoration: none;
+    color: black;
+}
+#ball>div>a:hover{
+    text-decoration: underline;
+}
+h2{
+    font-size: 20px;
+}
+#right-side{
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+}
+#right-side>h3{
+    color: teal;
+}
+#right-side>div{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+#right-side>div>div>a{
+    text-decoration: none;
+    color: black;
+}
+#right-side>div>div>a:hover{
+    text-decoration: underline;
+}
+#right-side>div>img{
+    border-radius: 5px;
+    margin-right: 15px;
+    width: 90px;
+    height: 80px;
+}
+#right-side>button{
+    display: block;
+    margin: auto;
+    background-color: teal;
+    border-color: teal;
+    color: white;
+    height: 30px;
+    margin-top: 0px;
+}
+#right-side>div:last-child{
+    margin-bottom: 0px;
+}

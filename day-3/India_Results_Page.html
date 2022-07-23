@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="results.css" />
 </head>
 <body>
-    <div>
+    <div id="main">
         <h1>India National Cricket Team</h1>
         <div>
             <a href="India_Home_Page.html">Home</a>
@@ -19,14 +20,19 @@
             <a href="#">Stats</a>
             <a href="India_Players_Page.html">Players</a>
         </div>
+        <hr>
         <div>
             <div>
                 <h2>India Cricket Team Result</h2>
                 <div id="left-side">
-                    <div>Date</div>
-                    <div>Match Details</div>
+                    <div>
+                        <div>Date</div>
+                        <div>Match Details</div>
+                    </div>
+                    <div id="left-side_sub"></div>
                 </div>
             </div>
+            <hr>
             <div id="right-side">
                 <h3>LATEST NEWS</h3>
             </div>
@@ -134,8 +140,8 @@
         a.innerText=el.res;
         a.setAttribute("href",el.link);
         divb.append(pb,pc,pd,a);
-        let hr=document.createElement("hr");
-        document.querySelector("#left-side").append(diva,divb,hr);
+        // let hr=document.createElement("hr");
+        document.querySelector("#left-side_sub").append(diva,divb);
     });
 
     let brr=[
