@@ -1,20 +1,20 @@
 body{
     background-color: #E3E6E3;
 }
-body>div{
+#body{
     width: 69%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     padding: 10px;
     margin: auto;
 }
-h1{
+#body h1{
     text-align: center;
 }
-p{
+#body p{
     text-align: center;
 }
-h3{
+#body h3{
     text-align: center;
 }
 #middLe{
@@ -33,7 +33,9 @@ h3{
     display: flex;
     gap: 30px;
 }
-
+#LeFt{
+    display: flex;
+}
 .left>div{
     display: flex;
     flex-direction: column;
